@@ -2429,6 +2429,7 @@ static int read_thread(void *arg)
         // There is total different meaning for 'timeout' option in rtmp
         av_log(ffp, AV_LOG_WARNING, "remove 'timeout' option for rtmp.\n");
         av_dict_set(&ffp->format_opts, "timeout", NULL, 0);
+        av_dict_set(&ffp->format_opts, "fflags", "nobuffer", 0);
     }
     if (ffp->iformat_name)
         is->iformat = av_find_input_format(ffp->iformat_name);
