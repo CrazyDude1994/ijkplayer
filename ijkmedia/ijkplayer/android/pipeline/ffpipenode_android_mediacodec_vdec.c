@@ -297,7 +297,7 @@ static int feed_input_buffer(JNIEnv *env, IJKFF_Pipenode *node, int64_t timeUs, 
         do {
             if (d->queue->nb_packets == 0)
                 SDL_CondSignal(d->empty_queue_cond);
-            if (ffp_packet_queue_get_or_buffering(ffp, d->queue, &pkt, &d->pkt_serial, &d->finished) < 0) {
+            if (ffp_packet_queue_get(d->queue, &pkt, 1,  &d->pkt_serial) < 0) {
                 ret = -1;
                 goto fail;
             }
