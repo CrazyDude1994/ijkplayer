@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="android">
+        <df name="pipeline">
+          <in>ffpipeline_android.c</in>
+          <in>ffpipenode_android_mediacodec_vdec.c</in>
+        </df>
+        <in>ffmpeg_api_jni.c</in>
+        <in>ijkplayer_android.c</in>
+        <in>ijkplayer_jni.c</in>
+      </df>
+      <df name="ijkavformat">
+        <in>allformats.c</in>
+        <in>async.c</in>
+        <in>ijkinject.c</in>
+        <in>ijklivehook.c</in>
+        <in>ijklongurl.c</in>
+        <in>ijkmediadatasource.c</in>
+        <in>ijksegment.c</in>
+        <in>ijkurlhook.c</in>
+        <in>utils.c</in>
+      </df>
+      <df name="pipeline">
+        <in>ffpipeline_ffplay.c</in>
+        <in>ffpipenode_ffplay_vdec.c</in>
+      </df>
+      <in>ff_cmdutils.c</in>
+      <in>ff_ffpipeline.c</in>
+      <in>ff_ffpipenode.c</in>
+      <in>ff_ffplay.c</in>
+      <in>ijkmeta.c</in>
+      <in>ijkplayer.c</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Android.mk</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Android.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Android.mk</buildCommand>
+          <cleanCommand>${MAKE} -f Android.mk clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="android/ffmpeg_api_jni.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="android/ijkplayer_android.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="android/ijkplayer_jni.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="android/pipeline/ffpipeline_android.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="android/pipeline/ffpipenode_android_mediacodec_vdec.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="ff_cmdutils.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ff_ffpipeline.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ff_ffpipenode.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ff_ffplay.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/allformats.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/async.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/ijkinject.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/ijklivehook.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/ijklongurl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/ijkmediadatasource.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/ijksegment.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/ijkurlhook.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkavformat/utils.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkmeta.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ijkplayer.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="pipeline/ffpipeline_ffplay.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="pipeline/ffpipenode_ffplay_vdec.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

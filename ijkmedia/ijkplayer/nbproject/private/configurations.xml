@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="android">
+        <df name="pipeline">
+          <in>ffpipeline_android.c</in>
+          <in>ffpipeline_android.h</in>
+          <in>ffpipenode_android_mediacodec_vdec.c</in>
+          <in>ffpipenode_android_mediacodec_vdec.h</in>
+          <in>h264_nal.h</in>
+          <in>hevc_nal.h</in>
+        </df>
+        <in>ffmpeg_api_jni.c</in>
+        <in>ffmpeg_api_jni.h</in>
+        <in>ijkplayer_android.c</in>
+        <in>ijkplayer_android.h</in>
+        <in>ijkplayer_android_def.h</in>
+        <in>ijkplayer_jni.c</in>
+      </df>
+      <df name="ijkavformat">
+        <in>allformats.c</in>
+        <in>async.c</in>
+        <in>ijkavformat.h</in>
+        <in>ijkinject.c</in>
+        <in>ijklivehook.c</in>
+        <in>ijklongurl.c</in>
+        <in>ijkmediadatasource.c</in>
+        <in>ijksegment.c</in>
+        <in>ijkurlhook.c</in>
+        <in>url.h</in>
+        <in>utils.c</in>
+      </df>
+      <df name="ijkavutil">
+        <in>opt.h</in>
+      </df>
+      <df name="pipeline">
+        <in>ffpipeline_ffplay.c</in>
+        <in>ffpipeline_ffplay.h</in>
+        <in>ffpipenode_ffplay_vdec.c</in>
+        <in>ffpipenode_ffplay_vdec.h</in>
+      </df>
+      <in>config.h</in>
+      <in>ff_cmdutils.c</in>
+      <in>ff_cmdutils.h</in>
+      <in>ff_fferror.h</in>
+      <in>ff_ffinc.h</in>
+      <in>ff_ffmsg.h</in>
+      <in>ff_ffmsg_queue.h</in>
+      <in>ff_ffpipeline.c</in>
+      <in>ff_ffpipeline.h</in>
+      <in>ff_ffpipenode.c</in>
+      <in>ff_ffpipenode.h</in>
+      <in>ff_ffplay.c</in>
+      <in>ff_ffplay.h</in>
+      <in>ff_ffplay_debug.h</in>
+      <in>ff_ffplay_def.h</in>
+      <in>ff_ffplay_options.h</in>
+      <in>ijkmeta.c</in>
+      <in>ijkmeta.h</in>
+      <in>ijkplayer.c</in>
+      <in>ijkplayer.h</in>
+      <in>ijkplayer_internal.h</in>
+      <in>version.h</in>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Android.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>3</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>.</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1083,6 +1083,7 @@ retry:
                 Frame *nextvp = frame_queue_peek_next(&is->pictq);
                 duration = vp_duration(is, vp, nextvp);
                 if(!is->step && (redisplay || ffp->framedrop > 0 || (ffp->framedrop && get_master_sync_type(is) != AV_SYNC_VIDEO_MASTER)) && time > is->frame_timer + duration) {
+                    av_log(NULL, AV_LOG_INFO, "dropping frames");
                     if (!redisplay)
                         is->frame_drops_late++;
                     frame_queue_next(&is->pictq);
