@@ -2768,19 +2768,9 @@ static int read_thread(void *arg)
                     if (!is->abort_request)
                         continue;
                 } else {
-                    completed = 1;
-                    ffp->auto_resume = 0;
 
                     // TODO: 0 it's a bit early to notify complete here
                     ffp_toggle_buffering(ffp, 0);
-                    toggle_pause(ffp, 1);
-                    if (ffp->error) {
-                        av_log(ffp, AV_LOG_INFO, "ffp_toggle_buffering: error: %d\n", ffp->error);
-                        ffp_notify_msg1(ffp, FFP_MSG_ERROR);
-                    } else {
-                        av_log(ffp, AV_LOG_INFO, "ffp_toggle_buffering: completed: OK\n");
-                        ffp_notify_msg1(ffp, FFP_MSG_COMPLETED);
-                    }
                 }
             }
         }
