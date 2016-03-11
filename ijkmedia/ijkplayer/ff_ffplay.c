@@ -2767,10 +2767,6 @@ static int read_thread(void *arg)
                     SDL_UnlockMutex(wait_mutex);
                     if (!is->abort_request)
                         continue;
-                } else {
-
-                    // TODO: 0 it's a bit early to notify complete here
-                    ffp_toggle_buffering(ffp, 0);
                 }
             }
         }
