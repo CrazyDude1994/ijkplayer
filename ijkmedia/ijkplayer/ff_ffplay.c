@@ -2769,7 +2769,7 @@ static int read_thread(void *arg)
                     if (!is->abort_request)
                         continue;
                 } else {
-                    ffp->auto_resume = 0;
+                    ffp->auto_resume = 1;
 
                     // TODO: 0 it's a bit early to notify complete here
                     ffp_toggle_buffering(ffp, 0);
