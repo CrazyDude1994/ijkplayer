@@ -2769,7 +2769,6 @@ static int read_thread(void *arg)
                     if (!is->abort_request)
                         continue;
                 } else {
-                    completed = 1;
                     ffp->auto_resume = 0;
 
                     // TODO: 0 it's a bit early to notify complete here
